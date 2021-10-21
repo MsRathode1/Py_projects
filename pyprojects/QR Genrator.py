@@ -12,7 +12,7 @@ class QR_generator:
         self.Employee_designation.set(" ")
         self.msg = " "
         self.msg_lable.config(text=self.msg)
-        self.image = " "
+        self.qr_code_label.config(image=' ')
 
 
     def generate(self):
@@ -115,17 +115,6 @@ class QR_generator:
 
         self.qr_code_label = Label(qr_frame,text="QR Code \n not available",font=("times new roman" ,15),bg="#003366",fg="white",bd=1,relief=RIDGE)
         self.qr_code_label.place(x=50,y=110,width=180,height=180)
-
-
-
-
-
-
-
-
-
-
-
 
 
 root = Tk()
